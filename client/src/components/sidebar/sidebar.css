@@ -1,0 +1,97 @@
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #272727;
+    text-align: center;
+    padding: 30px 1.5vw;
+    height: max(100%,100vh);
+}
+.profileLogo-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.profileLogo-container p{
+    display: none;
+}
+.profileLogo-container button{
+    background-color: #56CC6A;
+    border: none;
+    border-radius: 50%;
+    font-size:2.5vw;
+    width: 3.75vw;
+    height: 3.75vw;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom:50px;
+}
+.profileLogo-container button:focus{
+    outline: none;
+}
+.icon-sidebar{ 
+    color: #56CC6A !important;
+    font-size : 2.5vw !important;
+}
+.Search-icon,.Create-icon{
+    
+    font-size: 1.25vw;
+    color: white;
+    cursor: pointer;
+    margin-bottom:50px;
+}
+.Search-icon p,.Create-icon p{
+    margin-top: 0;
+}
+@media (max-width: 1024px){
+    .icon-container{
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        padding-top: 50px ;
+        
+    }
+    .profileLogo-container button{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .profileLogo-container p{
+        position: absolute;
+        display: inline;
+        color: white;
+        font-size:3vw ;
+        left: 4rem;
+        top: -1rem;
+    }
+    .Search-icon,.Create-icon{
+        font-size: 3vw;
+        
+    }
+    .icon-sidebar{
+        font-size: 40px !important;
+    }
+    .Search-icon,.Create-icon{
+        position: relative;
+    }
+    .Search-icon p,.Create-icon p{
+        position: absolute;
+        display: inline ;
+        top: 5px;
+        left: 50px;
+        
+    }
+}
+@media (max-width: 768px){
+    .Search-icon p,.Create-icon p,.profileLogo-container p{
+        display: none;
+        
+    }
+
+}
+
+

@@ -1,0 +1,13 @@
+.customInput{
+    margin: 15px 0;
+    text-align: left;
+    padding: 28px;
+    font-size: 18px;
+    border: 2px solid #B0B0B0;
+}
+.customInput::placeholder{
+    color:#B0B0B0;
+}
+.customInput:focus{
+    outline: none;
+}

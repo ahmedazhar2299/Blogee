@@ -1,0 +1,29 @@
+
+.posts-container h1{
+    font-family: serif;
+    font-size: 35px;
+    color: #56CC6A;
+}
+.posts-container p{
+    font-size: 20px;
+}
+.post-user{
+    color: #C6C6C6;
+    margin-bottom: 50px;
+}
+@media (max-width: 768px){
+    .posts-container{
+        position: relative;
+    }
+    h2{
+        position: absolute;
+        bottom: -20px;
+    }
+    .post-user{
+        text-align: right;
+    }
+}
+.readMore{
+    text-decoration: none;
+    color: #56CC6A;
+}

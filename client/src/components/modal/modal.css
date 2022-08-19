@@ -1,0 +1,121 @@
+.container-main{
+    background-color: #272727;
+    width: 50%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    left: 20vw;
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 0 50px 50px 50px;
+  
+}
+.close-btn{
+    background-color: #272727;
+    border: 0;
+    color : #fff;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    border-radius: 10px;
+}
+.close-btn:hover{
+    color: red;
+}
+.close-btn:focus{
+    outline: none;
+}
+.container-main h1{
+    color: #56CC6A;
+    text-align: center;
+    font-size: 40px;
+}
+label{
+    color: #56CC6A;
+    display: block;
+    font-size: 20px;
+    padding-top: 15px;
+    
+}
+.title label{
+    margin-right: 110px;
+}
+.description label{
+    margin-right: 30px;
+}
+
+.title,.description{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 0;
+}
+
+.titleInput,.descInput{
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 15px;
+    resize: none;
+    border: 0;
+}
+.descInput{
+    height: 200px;
+}
+.titleInput::placeholder{
+    color: #C6C6C6;
+}
+.titleInput:focus,.descInput:focus{
+    outline: none;
+}
+.Modal-btn-container{
+    padding-left: 170px;
+}
+.Modal-btn{
+    
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #56CC6A;
+    color: #272727;
+    width: 100%;
+}
+.Modal-btn:focus{
+    outline: none;
+}
+.Modal-btn:hover{
+    color: #fff;
+}
+.Modal-btn:active{
+    background-color: #fff;
+    color: #56CC6A;
+}
+@media (max-width: 1024px){
+    .container-main{
+        top:-750px;
+        left: 20vw;
+        
+    }
+    .container-main h1{
+        font-size: 4vw;
+    }
+    .title,.description{
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
+    label{
+        text-align: left;
+        padding-bottom: 20px;
+        font-size: 2vw;
+    }
+    .titleInput,.descInput{
+        width: 90%;
+    }
+    .Modal-btn-container{
+        padding-left: 0;
+    }
+}
